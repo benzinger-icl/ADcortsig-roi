@@ -2,14 +2,12 @@
 ## Overview
 
 This repository contains the Alzheimer disease cortical signature region of interests (ROIs). The cortical signatures are a composite of brain regions susceptible to AD-related cortical atrophy for autosomal dominant Alzheimer disease (ADAD, Figure 1) and late-onset Alzheimer disease (LOAD, Figure 2) defined in Dincer et.al., 2020 (submitted).
-
-![ADAD Cortical Signature](https://github.com/benzinger-icl/ADcortsig-roi/blob/master/example_images/ADADCortSig_image.png)
-
-Figure 1: Brain regions susceptible cortical atrophy for autosomal domainant Alzheimer disease
-
-![LOAD Cortical Signature](https://github.com/benzinger-icl/ADcortsig-roi/blob/master/example_images/LOADCortSig_image.png)
-
-Figure 2: Brain regions susceptible cortical atrophy for late-onset Alzheimer disease
+  
+  
+ADAD Cortical Signature            |  LOAD Cortical Signature
+:-------------------------:|:-------------------------:
+![](https://github.com/benzinger-icl/ADcortsig-roi/blob/master/example_images/ADADCortSig_image.png)  |  ![](https://github.com/benzinger-icl/ADcortsig-roi/blob/master/example_images/LOADCortSig_image.png)
+ 
 
 
 The cortical signature files are located under the 'cortical_signature_roi' directory.  The ROI files are in FreeSurfer label format. Python scripts are available to calculate the cortical signature thickness measure for a batch of FreeSurfer sessions. We recommend using the cortical signature maps on FreeSurfer version 5.3, 6.0, and 7.1. Other FreeSurfer versions have not been tested.
@@ -25,7 +23,7 @@ The scripts perform the following steps:
 1. Download and install python 3 (https://www.python.org/) and the pandas package (https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html)
 
 2. Download from this repository:
-- 'cortical_signature_ROIs' directory
+ - 'cortical_signature_ROIs' directory
 - cs_calc.py
 - cs_format.py
 - cs_main.py
