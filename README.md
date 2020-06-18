@@ -1,7 +1,7 @@
 # AD Cortical Signature ROI's
 ## Overview
 
-This repository contains the Alzheimer disease cortical signature region of interests (ROIs). The cortical signatures are a composite of brain regions susceptible to AD-related cortical atrophy for autosomal dominant Alzheimer disease (ADAD, Figure 1) and late-onset Alzheimer disease (LOAD, Figure 2) defined in Dincer et.al., 2020 (submitted).
+This repository contains the Alzheimer disease cortical signature region of interests (ROIs). The cortical signatures are a composite of brain regions susceptible to AD-related cortical atrophy for autosomal dominant Alzheimer disease (ADAD) and late-onset Alzheimer disease (LOAD) defined in Dincer et.al., 2020 (submitted).
   
   
 ADAD Cortical Signature            |  LOAD Cortical Signature
