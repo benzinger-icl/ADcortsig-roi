@@ -10,17 +10,17 @@ ADAD Cortical Signature            |  LOAD Cortical Signature
  
 
 
-The cortical signature files are located under the 'cortical_signature_roi' directory.  The ROI files are in FreeSurfer label format. Python scripts are available to calculate the cortical signature thickness measure for a batch of FreeSurfer sessions. We recommend using the cortical signature maps on FreeSurfer version 5.3, 6.0, and 7.1. Other FreeSurfer versions have not been tested.
+The cortical signature files are located under the 'cortical_signature_roi' directory. The ROI files are in FreeSurfer label format. Python scripts are available to calculate the cortical signature thickness measure for a batch of FreeSurfer sessions. The thickness measure is defined by the average ROI thickness across hemisphere and weighted by the number of vertices in the ROI. We recommend using the cortical signature maps on FreeSurfer version 5.3, 6.0, and 7.1. Other FreeSurfer versions have not been tested.
 
 The scripts perform the following steps:
--	Register cortical signature maps to participant space. (*mri_label2label*)
--	Obtain the cortical thickness value from the maps for the left and right hemisphere (*mris_anatomicalstats*)
--	Format the *mris_anatomicalstats* output to a readable table
--	Calculate the cortical signature thickness measure and output to a CSV file.
+-	Register cortical signature maps to participant space (*mri_label2label*).
+-	Obtain the cortical thickness value from the maps for the left and right hemisphere (*mris_anatomicalstats*).
+-	Format the *mris_anatomicalstats* output to a readable table.
+-	Calculate the cortical signature thickness measure and output to a CSV file.  
 
 
 ## To Use:
-1. Download and install python 3 (https://www.python.org/) and the pandas package (https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html)
+1. Download and install python 3 (https://www.python.org/) and the pandas package (https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html).
 
 2. Download from this repository:
  - 'cortical_signature_ROIs' directory
@@ -51,7 +51,7 @@ cp -r $FREESURFER_HOME/subjects/fsaverage $SUBJECTS_DIR
 cp /path/to/cortical_signature_roi/* $SUBJECTS_DIR/fsaverage/label/
 ```
 
-6. Update the targeted FreeSurfer session list into the freesurfer_list.csv, with each row being a FreeSurfer session.
+6. Update the targeted FreeSurfer session list in the freesurfer_list.csv file, with each row being a FreeSurfer session.
 
 Note: FreeSurfers listed in freesurfer_list.csv should be in your SUBJECT_DIR path.
 
@@ -74,13 +74,13 @@ The output directory will contain the following:
 4.	Cortsig_DATE_TIME.txt
 
 **'orig_th' directory**
-: This directory hold the original stat output from the *mris_anatomicalstats* command for each FreeSurfer in freesurfer_list.csv
+: This directory hold the original stat output from the *mris_anatomicalstats* command for each FreeSurfer in freesurfer_list.csv.
 
 **'concat_th' directory**
 : The original *mris_anatomicalstats* output is formatted to be more readable and the data is combined for all FreeSurfers and saved into this directory.
 
 **[ADAD/LOAD].CortSig.csv**
-: This is the finalized output containing the average cortical signature thickness value for each FreeSurfer in freesurfer_list.csv
+: This is the finalized output containing the cortical signature thickness value for each FreeSurfer in freesurfer_list.csv.
 
 **cortsig_DATE_TIME.txt**
-: Logs the output from the *mris_label2label* and *mris_anatomicalstats* functions
+: Logs the output from the *mris_label2label* and *mris_anatomicalstats* functions.
