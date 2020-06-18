@@ -48,7 +48,7 @@ cp -r $FREESURFER_HOME/subjects/fsaverage $SUBJECTS_DIR
 5. Copy the cortical siganture FreeSurfer label files under the 'cortical_signature_roi' directory to $SUBJECTS_DIR/fsaverage/label.
 
 ```
-cp /path/to/cortical_signature_roi/* $SUBJECTS_DIR/fsaverage/label/
+cp /path/to/cortical_signature_ROIs/* $SUBJECTS_DIR/fsaverage/label/
 ```
 
 6. Update the targeted FreeSurfer session list in the freesurfer_list.csv file, with each row being a FreeSurfer session.
